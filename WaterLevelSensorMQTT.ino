@@ -1,15 +1,15 @@
 // Code to measure water level in a water tank
 // Board: ESP8266 NodeMCU
-// 15 Mayo 2021
+// 15 May 2021
 // Pablo Cruz Lemini
 // portfedh@gmail.com
 
 // Mills Function 
 const unsigned long event_interval = 300000; // 5 minute interval, 300 second
-//const unsigned long event_interval = 2000; // 2 second interval. Usar solo para pruebas
+//const unsigned long event_interval = 2000; // 2 second interval. For testing
 unsigned long previous_time = 0; 
 
-// Incluir Conexion a MQTT 
+// MQTT Library
 #include "EspMQTTClient.h" 
 
 #define WIFI_SSID        "<Wifi_Username_here>"                          // WiFi Username
@@ -60,7 +60,7 @@ void setup() {
   pinMode(ECHO, INPUT_PULLUP); // Initializing Echo Input
   } 
 
-//MQTT Innitial Connection
+// MQTT Innitial Connection
 void onConnectionEstablished() {
   client.publish(startup_topic, String(client_name + " is now online."));
   }

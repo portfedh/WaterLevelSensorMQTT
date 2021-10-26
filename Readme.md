@@ -77,6 +77,10 @@ Output should be something similar to the following:
 
 ----(Over MQTT Broker GIF here)--
 
+Here is an image of how the information looks when written into influxdb and then displayed in Grafana. The graph shows a 15 day period. 
+
+![Grafana Output](http://bite-size.mx/GrafanaWaterLevelSensor.png)
+
 ## Use cases
 
 I designed this to monitor the water level in my main water tank, located in my roof. I plan on installing a second one in a water cistern.
