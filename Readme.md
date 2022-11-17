@@ -1,5 +1,8 @@
 # MQTT Water Level Sensor
 
+I recently made a blog post describing this project in detail. You can take a look [here.](https://pablocruz.io/water-level-monitor/)
+
+
 Water tanks are often placed in hard to reach places.
 
 The idea of this sensor is to monitor the water level of a water tank and report its values every 5 minutes. This way the water level can be checked remotely, and an alarm set to go off if the value falls below a certain range.
